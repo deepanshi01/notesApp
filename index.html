@@ -27,8 +27,7 @@
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" id = "searchTxt" 
-        type="search" placeholder="Search" aria-label="Search">
+        <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form>
     </div>
@@ -38,10 +37,17 @@
     <h1>Welcome to Notes App </h1>
     <div class="card">
       <div class="card-body">
+
+        <div class="form-group">
+          <h5 class="card-title">Add title</h5>
+          <input type="text" class="form-control" id="addTitle" placeholder="Enter title">
+        </div>
+
+
         <h5 class="card-title">Add a note</h5>
         <div class="form-group">
-        <textarea class="form-control" id="addTxt" rows="3"></textarea>
-      </div>
+          <textarea class="form-control" id="addTxt" rows="3"></textarea>
+        </div>
         <button class="btn btn-primary" id="addBtn">Add note</button>
       </div>
     </div>
@@ -49,7 +55,7 @@
     <h1>Yours Notes</h1>
     <hr>
     <div id="notes" class="row container-fluid"></div>
-      </div>
+  </div>
 
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
